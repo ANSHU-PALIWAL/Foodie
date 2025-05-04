@@ -26,14 +26,15 @@ const Header = () => {
     });
   }, []);
 
-
   return (
     <>
       <nav className="navbar navbar-expand-xxl nav-bg">
         <div className="container">
-          <a className="navbar-brand" href="#0">
-            <img src={require("../assets/logo/logo.png")} alt="logo" />
-          </a>
+          <NavLink to="/">
+            <a className="navbar-brand">
+              <img src={require("../assets/logo/logo.png")} alt="logo" />
+            </a>
+          </NavLink>
           <button className="location-a">
             <span>
               {add.road} - {add.city}
@@ -55,7 +56,7 @@ const Header = () => {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <NavLink to="/">
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#0">
+                  <a className="nav-link" aria-current="page" href="#">
                     <i className="fa-solid fa-house"></i>
                     Home
                   </a>
@@ -63,7 +64,7 @@ const Header = () => {
               </NavLink>
               <NavLink to="/about">
                 <li className="nav-item">
-                  <a className="nav-link" href="#0">
+                  <a className="nav-link" href="#">
                     <i className="fa-solid fa-user"></i>
                     About
                   </a>
@@ -71,7 +72,7 @@ const Header = () => {
               </NavLink>
               <NavLink to="/contact">
                 <li className="nav-item">
-                  <a className="nav-link" href="#0">
+                  <a className="nav-link" href="#">
                     <i className="fa-solid fa-phone"></i>
                     Contact
                   </a>
@@ -79,7 +80,7 @@ const Header = () => {
               </NavLink>
               <NavLink to="/cart">
                 <li className="nav-item">
-                  <a className="nav-link" href="#0">
+                  <a className="nav-link" href="#">
                     <i className="fa-solid fa-cart-shopping">
                       <span className="count">{cartItems.length}</span>
                     </i>
@@ -88,7 +89,7 @@ const Header = () => {
                 </li>
               </NavLink>
               <li className="nav-item">
-                <a className="nav-link" href="#0">
+                <a className="nav-link" href="#">
                   Online :{"  "}
                   {onlineStatus ? (
                     <i className="fa-solid fa-wifi"></i>

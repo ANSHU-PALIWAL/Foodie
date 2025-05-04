@@ -21,13 +21,15 @@ const Contact = () => {
             <div className="email-signature">
               <div className="signature-icon">
                 <img
-                  src={require("../assets/contact/footer.jpeg")}
+                  // src={require("../assets/contact/footer.jpeg")}
+                  src={require("../assets/contact/okimrr.jpeg")}
                   alt="contact-img"
                 />
               </div>
               <div className="signature-details">
                 <h2 className="title">
-                  Priyanshu <span>Paliwal</span>
+                  {/* Priyanshu <span>Paliwal</span> */}
+                  WebDev <span>Project</span>
                 </h2>
                 <span className="post">Frontend Developer</span>
                 <ul className="social-links">
@@ -50,13 +52,16 @@ const Contact = () => {
               </div>
               <ul className="signature-content">
                 <li>
-                  <i className="fa fa-phone"></i> (+91) 935-8670-279
+                  {/* <i className="fa fa-phone"></i> (+91) 935-8670-279 */}
+                  <i className="fa fa-phone"></i> (+91) 012-3456-789
                 </li>
                 <li>
-                  <i className="fa fa-envelope"></i> paliwalanshu35@gmail.com
+                  {/* <i className="fa fa-envelope"></i> paliwalanshu35@gmail.com */}
+                  <i className="fa fa-envelope"></i> testmail@gmail.com
                 </li>
                 <li>
-                  <i className="fas fa-map-marker-alt"></i> Jaipur Rajasthan
+                  {/* <i className="fas fa-map-marker-alt"></i> Jaipur Rajasthan */}
+                  <i className="fas fa-map-marker-alt"></i> Kota Rajasthan
                 </li>
               </ul>
             </div>
